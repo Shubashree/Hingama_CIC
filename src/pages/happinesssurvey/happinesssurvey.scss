@@ -1,0 +1,35 @@
+page-happinesssurvey {
+
+ion-navbar{
+color: map-get($colors, primary)	
+}
+
+.item {
+margin: 3px;
+}
+
+h4
+{
+	font-family: "roboto";
+	font-style: "medium";
+	font-size: "14px";
+}
+
+h6 {
+	color: map-get($colors, primary)
+}
+
+ion-content{
+background-color: map-get($colors, background)	
+}
+
+.fixed-content{
+background-color: map-get($colors, background)	
+}
+
+ion-button{
+	font-family: "roboto"
+}
+
+
+}

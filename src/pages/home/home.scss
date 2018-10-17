@@ -1,0 +1,64 @@
+page-home {
+
+	ion-content {
+		min-height: 100%;
+	}
+
+	#topButtons {
+		display: flex;
+		flex-direction: row;
+	}
+	#topButtons button {
+		flex: 1;
+	}
+
+	.no-scroll .scroll-content{
+		overflow: hidden;
+	}
+
+	.logo-text {
+		font-family: Noteworthy;
+		line-height: normal;
+		font-size: 72px;
+		color: #23CE99;
+	}
+
+	.signin-button {
+		background: #23CE99;
+		box-shadow: 5px 5px 20px #DADBDB;
+		border-radius: 11px;
+	}
+
+	.strike {
+		display: block;
+		text-align: center;
+		overflow: hidden;
+		white-space: nowrap; 
+		margin-top: 15px;
+	}
+	
+	.strike > span {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.strike > span:before,
+	.strike > span:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		width: 9999px;
+		height: 1px;
+		background: rgba(155, 155, 155, 0.3);
+	}
+	
+	.strike > span:before {
+		right: 100%;
+		margin-right: 15px;
+	}
+	
+	.strike > span:after {
+		left: 100%;
+		margin-left: 15px;
+	}
+}

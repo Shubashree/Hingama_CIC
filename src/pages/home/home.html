@@ -1,0 +1,35 @@
+<ion-content padding class="no-scroll">
+
+  <ion-list>
+
+    <h2 text-center class="logo-text">H</h2>
+
+    <ion-list>
+      <ion-item ion-fixed>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text" #username></ion-input>
+      </ion-item>
+
+      <ion-item ion-fixed>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" #password></ion-input>
+      </ion-item>
+    </ion-list>
+    
+    <div padding>
+      <button class="signin-button" block ion-button (click)="signInUser()" item-left>Sign In</button>
+    </div>
+
+    <div padding class="strike">
+      <span>OR</span>
+    </div>
+
+    <div padding>
+      <button class="signin-button" block ion-button item-left>Sign In with Google</button>
+    </div>
+
+    <h4 text-center>New to this experience? <a (click)="register()">Sign up</a></h4>
+
+  </ion-list>
+
+</ion-content>

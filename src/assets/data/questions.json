@@ -1,0 +1,325 @@
+{
+	"happinesssurvey": [
+	{
+		"questionText": "I feel that life is very rewarding",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I am always committed and involved",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I don't feel particularly pleased with the way I am",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I am intensely interested in other people",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I have very warm feelings towards almost everyone",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I rarely wake up feeling rested",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I am not particularly optimistic about the future",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I find most things amusing",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "Life is good",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I do not think that the world is a good place",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I laugh a lot",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I am well satisfied about everything in my life",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I don't think I look attractive",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "There is a gap between what I would like to do and what I have done",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+	},
+	{
+		"questionText": "I am very happy",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+	{
+		"questionText": "I find beauty in some things",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+	{
+		"questionText": "I always have a cheerful effect on others",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+
+{
+		"questionText": "I can fit in(find time for) everything I want to",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I feel that I am not especially in control of my life",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I feel able to take anything on",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I feel fully mentally alert",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I often experience joy and elation",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I don't find it easy to make decisions",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I don't have a particular sense of meaning and purpose in my life",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I feel I have a great deal of energy",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+
+{
+		"questionText": "I usually have a good influence on events",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I don't have fun with other people",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I don't feel particularly healthy",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+},
+{
+		"questionText": "I don't have particularly happy memories of the past",
+		"answers": [
+		{"an" : "Strongly disagree", "selected": false},
+		{"an" : "Moderately disagree", "selected": false},
+		{"an" : "Slightly disagree", "selected": false},
+		{"an" : "Slightly agree", "selected": false},
+		{"an" : "Moderately agree", "selected": false},
+		{"an" : "Strongly agree", "selected": false}
+	]
+}
+	
+]}
