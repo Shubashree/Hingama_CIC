@@ -20,6 +20,7 @@ import { RegisterPage } from '../pages/register/register';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DataProvider } from '../providers/data/data';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 const firebaseAuth = {
   apiKey: "AIzaSyDXNvcoUEIsV7R-MzrXHVVSSkLCb2qzAP4",
@@ -68,7 +69,8 @@ const firebaseAuth = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    AngularFirestore
   ]
 })
 export class AppModule {}
