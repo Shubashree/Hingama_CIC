@@ -37,6 +37,7 @@ export class HappinesssurveyPage {
     this.slides.lockSwipes(true);
 
     this.dataprovide.fetchdata().then((data) => {
+      console.log(data)
     	data.map((happinesssurvey) => {
     		return happinesssurvey;
     	});

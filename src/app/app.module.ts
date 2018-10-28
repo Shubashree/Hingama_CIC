@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler, Platform } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -21,6 +21,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DataProvider } from '../providers/data/data';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { GooglePlus } from '@ionic-native/google-plus';
 
 const firebaseAuth = {
   apiKey: "AIzaSyDXNvcoUEIsV7R-MzrXHVVSSkLCb2qzAP4",
@@ -41,8 +42,7 @@ const firebaseAuth = {
     TabsPage,
     LoginPage,
     RegisterPage,
-    LoggedinPage
-
+    LoggedinPage,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +70,8 @@ const firebaseAuth = {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
-    AngularFirestore
+    AngularFirestore,
+    GooglePlus
   ]
 })
 export class AppModule {}

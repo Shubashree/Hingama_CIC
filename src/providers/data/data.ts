@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+
+
 
 /*
   Generated class for the DataProvider provider.
@@ -26,8 +27,8 @@ export class DataProvider {
 
   	return new Promise(resolve => {
 
-  		this.httpm.get('assets/data/questions.json').map(res => res.json()).subscribe(data => {
-  			this.data = data.happinesssurvey;
+  		this.httpm.get('assets/data/questions.json').subscribe(data => {
+  			this.data = data.json().happinesssurvey;
   			resolve(this.data);
         });
     });
