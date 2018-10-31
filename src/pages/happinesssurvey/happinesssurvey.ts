@@ -26,6 +26,7 @@ export class HappinesssurveyPage {
   score = 0;
   overall_score: any;
   scorepush: AngularFireList<any>;
+  currentuser: any;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public dataprovide: DataProvider, private firebased: AngularFireDatabase, private fire: AngularFireAuth) {
@@ -88,6 +89,7 @@ export class HappinesssurveyPage {
       this.score = this.score + 1;
     }
     console.log(this.score);
+    
 
     
 
@@ -96,11 +98,28 @@ export class HappinesssurveyPage {
   getscore() {
     this.overall_score = this.score / 29;
     console.log(this.overall_score);
-    this.scorepush = this.firebased.list('/' + this.fire.auth.currentUser.email +'/');
+    this.currentuser = this.fire.auth.currentUser.uid
+    console.log(this.currentuser);
+    this.scorepush = this.firebased.list('/' + this.currentuser +'/happiness-scores');
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth()+1; //January is 0!
+    let yyyy = today.getFullYear();
+
+    if(dd<10) {
+    dd = '0'+dd
+     } 
+
+    if(mm<10) {
+    mm = '0'+mm
+    } 
+
+    today = mm + '/' + dd + '/' + yyyy;
 
 
     this.scorepush.push({
-      HappinessScore: this.overall_score
+      HappinessScore: this.overall_score,
+      Date: today
     });
   }
 

@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler, Platform } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler, Platform} from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -16,6 +16,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { LoggedinPage } from '../pages/loggedin/loggedin';
 import { RegisterPage } from '../pages/register/register';
+import { GratitudejournalPage } from '../pages/gratitudejournal/gratitudejournal';
+import { MoodloggingPage } from '../pages/moodlogging/moodlogging';
+import { AwesomePage } from '../pages/awesome/awesome';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -43,6 +46,9 @@ const firebaseAuth = {
     LoginPage,
     RegisterPage,
     LoggedinPage,
+    GratitudejournalPage,
+    MoodloggingPage,
+    AwesomePage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +68,10 @@ const firebaseAuth = {
     TabsPage,
     LoginPage,
     RegisterPage,
-    LoggedinPage
+    LoggedinPage,
+    GratitudejournalPage,
+    MoodloggingPage,
+    AwesomePage
 
   ],
   providers: [
