@@ -5,6 +5,7 @@ import { HappinesssurveyPage } from '../happinesssurvey/happinesssurvey';
 import { GratitudejournalPage } from '../gratitudejournal/gratitudejournal';
 import { MoodloggingPage } from '../moodlogging/moodlogging';
 import { HomePage } from '../home/home';
+import { MediaPage } from '../media/media';
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -16,6 +17,7 @@ export class TabsPage {
   tab3Root = AboutPage;
   tab4Root = HappinesssurveyPage;
   tab5Root = GratitudejournalPage;
+  tab6Root = MediaPage;
   tabcolor= "primary";
   constructor() {
 

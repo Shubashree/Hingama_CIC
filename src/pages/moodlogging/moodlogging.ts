@@ -24,6 +24,11 @@ export class MoodloggingPage {
   list: Array <number>;
   filenames: Array<string>;
   datapush: AngularFireList<any>;
+  feelings: any;
+  currentuser: any;
+  todaydate: any;
+  m: any;
+  d: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private firebased: AngularFireDatabase, private fire: AngularFireAuth, public toastctrl: ToastController, public loadctrl: LoadingController) {
   	this.list=[1,2,3,4,5];
@@ -59,14 +64,14 @@ export class MoodloggingPage {
     let yyyy = today.getFullYear();
 
     if(dd<10) {
-    dd = '0'+dd
+    this.d = '0'+dd
      } 
 
     if(mm<10) {
-    mm = '0'+mm
+    this.m = '0'+mm
     } 
 
-    today = mm + '/' + dd + '/' + yyyy;
+    this.todaydate = mm + '/' + dd + '/' + yyyy;
 
 
     this.currentuser = this.fire.auth.currentUser.uid
@@ -75,7 +80,7 @@ export class MoodloggingPage {
     this.datapush.push({
       detail: this.feelings,
       emotion: i,
-      date: today
+      date: this.todaydate
     }).then(resolve =>{
       load.dismiss();
       this.navCtrl.push(AwesomePage);

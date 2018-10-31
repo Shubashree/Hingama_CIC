@@ -19,6 +19,7 @@ import { RegisterPage } from '../pages/register/register';
 import { GratitudejournalPage } from '../pages/gratitudejournal/gratitudejournal';
 import { MoodloggingPage } from '../pages/moodlogging/moodlogging';
 import { AwesomePage } from '../pages/awesome/awesome';
+import { MediaPage } from '../pages/media/media';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -48,7 +49,8 @@ const firebaseAuth = {
     LoggedinPage,
     GratitudejournalPage,
     MoodloggingPage,
-    AwesomePage
+    AwesomePage,
+    MediaPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,8 @@ const firebaseAuth = {
     LoggedinPage,
     GratitudejournalPage,
     MoodloggingPage,
-    AwesomePage
+    AwesomePage,
+    MediaPage
 
   ],
   providers: [

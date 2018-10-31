@@ -27,6 +27,10 @@ export class HappinesssurveyPage {
   overall_score: any;
   scorepush: AngularFireList<any>;
   currentuser: any;
+  todaydate: any;
+  m: any;
+  d: any;
+
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public dataprovide: DataProvider, private firebased: AngularFireDatabase, private fire: AngularFireAuth) {
@@ -107,19 +111,19 @@ export class HappinesssurveyPage {
     let yyyy = today.getFullYear();
 
     if(dd<10) {
-    dd = '0'+dd
+    this.d = '0'+dd
      } 
 
     if(mm<10) {
-    mm = '0'+mm
+    this.m = '0'+mm
     } 
 
-    today = mm + '/' + dd + '/' + yyyy;
+    this.todaydate = this.m + '/' + this.d + '/' + yyyy;
 
 
     this.scorepush.push({
       HappinessScore: this.overall_score,
-      Date: today
+      Date: this.todaydate
     });
   }
 

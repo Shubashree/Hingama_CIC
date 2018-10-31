@@ -21,6 +21,8 @@ export class GratitudejournalPage {
 
   currentuser: any;
   datapush: AngularFireList<any>;
+  textinput: any;
+  date: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private firebased: AngularFireDatabase, private fire: AngularFireAuth, public loadctrl: LoadingController, public toastctrl: ToastController) {
   }
