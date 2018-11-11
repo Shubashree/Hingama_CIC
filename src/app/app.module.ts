@@ -20,6 +20,7 @@ import { GratitudejournalPage } from '../pages/gratitudejournal/gratitudejournal
 import { MoodloggingPage } from '../pages/moodlogging/moodlogging';
 import { AwesomePage } from '../pages/awesome/awesome';
 import { MediaPage } from '../pages/media/media';
+import { HappinessscorePage } from '../pages/happinessscore/happinessscore';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,6 +43,7 @@ const firebaseAuth = {
     MyApp,
     AboutPage,
     HappinesssurveyPage,
+    HappinessscorePage,
     HomePage,
     TabsPage,
     LoginPage,
@@ -66,6 +68,7 @@ const firebaseAuth = {
     MyApp,
     AboutPage,
     HappinesssurveyPage,
+    HappinessscorePage,
     HomePage,
     TabsPage,
     LoginPage,

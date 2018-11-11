@@ -4,6 +4,7 @@ import { DataProvider } from '../../providers/data/data';
 import { FirebaseListObservable } from '@angular/fire/database-deprecated';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { HappinessscorePage } from '../happinessscore/happinessscore';
 
 /**
  * Generated class for the HappinesssurveyPage page.
@@ -28,6 +29,8 @@ export class HappinesssurveyPage {
   scorepush: AngularFireList<any>;
   currentuser: any;
   todaydate: any;
+  slidenumber=0;
+  array_of_scores:number[]=[];
   m: any;
   d: any;
 
@@ -57,10 +60,17 @@ export class HappinesssurveyPage {
   {
   	if(this.ans_completed==true)
   	{
-    this.slides.lockSwipes(false);
-  	this.ans_completed=false;
-  	this.slides.slideNext();
-  	this.slides.lockSwipes(true);
+      if(this.slidenumber!=28)
+      {
+        this.slides.lockSwipes(false);
+        this.slidenumber=this.slidenumber+1;
+        console.log("In next() current slidenumber is ")
+        console.log(this.slidenumber);
+        this.ans_completed=false;
+        this.slides.slideNext();
+        this.slides.lockSwipes(true);
+      }
+
   	}
   	else
   	{
@@ -69,37 +79,80 @@ export class HappinesssurveyPage {
 
   }
 
-  afteranswer(answer,optselected,question){
-  	this.ans_completed = true;
-    answer.selected = true;
-    console.log(optselected);
-    if (optselected == "Strongly disagree")
+  prev()
+  {
+    console.log("Before clicking on Prev");
+    console.log(this.slidenumber);
+    this.slides.lockSwipes(false);
+
+    //subtracting current score if present
+    if(this.ans_completed==true)
     {
-      this.score = this.score + 6;
+      this.score=this.score-this.array_of_scores[this.slidenumber];
+      /*delete this.array_of_scores[this.slidenumber];
+*/  this.array_of_scores.pop();  
     }
-    else if (optselected == "Moderately disagree") {
-      this.score = this.score + 5;
-    }
-    else if (optselected == "Slightly disagree") {
-      this.score = this.score + 4;
-    }
-    else if (optselected == "Slightly agree") {
-      this.score = this.score + 3;
-    }
-    else if (optselected == "Moderately agree") {
-      this.score = this.score + 2;
-    }
-    else if (optselected == "Strongly agree") {
-      this.score = this.score + 1;
+    //subtracting previous slide's score 
+    this.score=this.score-this.array_of_scores[this.slidenumber-1];
+    /*delete this.array_of_scores[this.slidenumber-1];*/
+    this.array_of_scores.pop();
+
+    this.ans_completed=false;
+    this.slidenumber=this.slidenumber-1;
+    console.log("Clicked on Prev");
+    console.log("Subtracted score");
+    console.log(this.score);
+    console.log(this.slidenumber);
+    this.slides.slidePrev();
+
+    /*this.slides.lockSwipes(true);*/
+  }
+
+  afteranswer(answer,optselected,question){
+    console.log("beg of ans_completed");
+    console.log(this.ans_completed);
+  	
+    answer.selected = true;
+    /*console.log(optselected);*/
+    if(this.ans_completed==false)
+    {
+      if (optselected == "Strongly disagree")
+      {
+        this.array_of_scores.push(6);
+        this.score = this.score + 6;
+      }
+      else if (optselected == "Moderately disagree") {
+        this.array_of_scores.push(5);
+        this.score = this.score + 5;
+      }
+      else if (optselected == "Slightly disagree") {
+        this.array_of_scores.push(4);
+        this.score = this.score + 4;
+      }
+      else if (optselected == "Slightly agree") {
+        this.array_of_scores.push(3);
+        this.score = this.score + 3;
+      }
+      else if (optselected == "Moderately agree") {
+        this.array_of_scores.push(2);
+        this.score = this.score + 2;
+      }
+      else if (optselected == "Strongly agree") {
+        this.array_of_scores.push(1);
+        this.score = this.score + 1;
+      }
     }
     console.log(this.score);
-    
-
-    
+    this.ans_completed = true;
+    console.log("end of ans_completed");
+    console.log(this.ans_completed);
+    this.next();
 
   }
 
   getscore() {
+    console.log("total score before dividing");
+    console.log(this.score);
     this.overall_score = this.score / 29;
     console.log(this.overall_score);
     this.currentuser = this.fire.auth.currentUser.uid
@@ -125,6 +178,9 @@ export class HappinesssurveyPage {
       HappinessScore: this.overall_score,
       Date: this.todaydate
     });
+    this.navCtrl.push(HappinessscorePage,{
+      'surveyscore':this.overall_score
+    });
   }
 
 
@@ -142,6 +198,14 @@ checkiflast(i)
 	{
 		return true;
 	}
+}
+
+checkifnotfirst(i)
+{ 
+  if(i > 0)
+  {
+    return true;
+  }
 }
 
 }
