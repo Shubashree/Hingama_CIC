@@ -6,18 +6,18 @@
 
 <ion-content class="cards-bg">
 
-  <ion-card>
+  <ion-card *ngFor="let e of items">
 
     <div>
-      <img src="https://lastfm-img2.akamaized.net/i/u/300x300/fa4368fd046c4ffccf967eb22bb4f601.png" />
+      <img src="{{e.image[3]['#text']}}" />
     </div>
 
     <ion-card-content>
       <ion-card-title>
-        Happy
+        {{e.name}}
       </ion-card-title>
       <p>
-        Pharrell Williams
+        {{e.artist}}
       </p>
     </ion-card-content>
 
@@ -29,44 +29,7 @@
         </button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button clear small color="danger" onclick='window.open("https://www.last.fm/music/Pharrell+Williams/Happy", "_system");' icon-start>
-          <ion-icon name='musical-notes'></ion-icon>
-          Listen
-        </button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
-        </button>
-      </ion-col>
-    </ion-row>
-
-  </ion-card>
-
-  <ion-card>
-
-    <img src="https://lastfm-img2.akamaized.net/i/u/300x300/b46ab8d526594ec0aac5c0f8ba61e302.png" />
-
-    <ion-card-content>
-      <ion-card-title>
-        Happy Songs for Happy People
-      </ion-card-title>
-      <p>
-        Mogwai
-      </p>
-    </ion-card-content>
-
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='star'></ion-icon>
-          Favorite
-        </button>
-      </ion-col>
-      <ion-col text-center>
-        <a ion-button clear small onclick='window.open("https://www.last.fm/music/Mogwai/Happy+Songs+for+Happy+People", "_system");'
-          color="danger" icon-start>
+        <a ion-button clear small color="danger" href="{{e.url}}" icon-start>
           <ion-icon name='musical-notes'></ion-icon>
           Listen
         </a>
@@ -80,85 +43,5 @@
     </ion-row>
 
   </ion-card>
-
-
-
-  <ion-card>
-
-    <div>
-      <img src="https://lastfm-img2.akamaized.net/i/u/300x300/4929cfba7c2ec125774d598e6c383b08.png" />
-    </div>
-
-    <ion-card-content>
-      <ion-card-title>
-        Merry & Happy
-      </ion-card-title>
-      <p>
-        TWICE
-      </p>
-    </ion-card-content>
-
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='star'></ion-icon>
-          Favorite
-        </button>
-      </ion-col>
-      <ion-col text-center>
-        <button ion-button clear small color="danger" onclick='window.open("https://www.last.fm/music/TWICE/Merry+&+Happyicon-start", "_system");'>
-          <ion-icon name='musical-notes'></ion-icon>
-          Listen
-        </button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
-        </button>
-      </ion-col>
-    </ion-row>
-
-  </ion-card>
-
-  <ion-card>
-
-    <div>
-      <img src="https://lastfm-img2.akamaized.net/i/u/300x300/c17e1eb33b0b4945c90778688ba44539.png" />
-    </div>
-
-    <ion-card-content>
-      <ion-card-title>
-          Get Happy!!
-      </ion-card-title>
-      <p>
-          Elvis Costello & The Attractions
-      </p>
-    </ion-card-content>
-
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='star'></ion-icon>
-          Favorite
-        </button>
-      </ion-col>
-      <ion-col text-center>
-        <button ion-button clear small color="danger" onclick='window.open("https://www.last.fm/music/Elvis+Costello+&+The+Attractions/Get+Happy%21%21", "_system");' icon-start>
-          <ion-icon name='musical-notes'></ion-icon>
-          Listen
-        </button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
-        </button>
-      </ion-col>
-    </ion-row>
-
-  </ion-card>
-
-
 
 </ion-content>
