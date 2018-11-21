@@ -24,10 +24,10 @@
 		    		<ion-radio (click) = "afteranswer(a, a.an, q)" [checked] = "a.selected"></ion-radio>
 		    	</ion-item>
 		    </ion-list>
-		    <button *ngIf = "checkifnotfirst(i)" ion-button icon-start (click)="prev()">
+		    <button class="prevbutton" *ngIf = "checkifnotfirst(i)" ion-button icon-start (click)="prev()" style = "font-family: 'roboto';">
 		    	<ion-icon name="Previous"> Previous </ion-icon>
 		    </button>
-		    <button *ngIf = "checkiflast(i)" ion-button icon-start (click)="getscore()" style = "font-family: 'roboto';">
+		    <button class="prevbutton" *ngIf = "checkiflast(i)" ion-button icon-start (click)="getscore()" style = "font-family: 'roboto';">
 		    	<ion-icon name="Finish"> Finish </ion-icon>
 		    </button>
 		</ion-slide>

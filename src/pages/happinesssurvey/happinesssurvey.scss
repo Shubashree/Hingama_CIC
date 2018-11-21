@@ -23,12 +23,20 @@ ion-content{
 background-color: map-get($colors, background)	
 }
 
+
 .fixed-content{
 background-color: map-get($colors, background)	
 }
 
 ion-button{
 	font-family: "roboto"
+}
+
+.prevbutton {
+	background: #5DCDE2;
+	box-shadow: 5px 5px 20px #DADBDB;
+	border-radius: 11px;
+	font-family: "roboto";
 }
 
 

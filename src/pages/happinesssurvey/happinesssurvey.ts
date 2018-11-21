@@ -171,8 +171,10 @@ export class HappinesssurveyPage {
     this.m = '0'+mm
     } 
 
-    this.todaydate = this.m + '/' + this.d + '/' + yyyy;
-
+    //this.todaydate = this.m + '/' + this.d + '/' + yyyy;
+    this.todaydate=new Date().getTime();
+    console.log("Today's date");
+    console.log(this.todaydate);
 
     this.scorepush.push({
       HappinessScore: this.overall_score,

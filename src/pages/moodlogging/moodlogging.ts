@@ -71,8 +71,12 @@ export class MoodloggingPage {
     this.m = '0'+mm
     } 
 
-    this.todaydate = mm + '/' + dd + '/' + yyyy;
-
+    //this.todaydate = mm + '/' + dd + '/' + yyyy;
+    this.todaydate= new Date( mm + '/' + dd + '/' + yyyy).getTime();
+    console.log("Day");
+    console.log(dd);
+    console.log("timestamp");
+    console.log(this.todaydate);
 
     this.currentuser = this.fire.auth.currentUser.uid
     console.log(this.currentuser);

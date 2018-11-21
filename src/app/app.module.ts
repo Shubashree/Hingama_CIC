@@ -21,6 +21,9 @@ import { MoodloggingPage } from '../pages/moodlogging/moodlogging';
 import { AwesomePage } from '../pages/awesome/awesome';
 import { MediaPage } from '../pages/media/media';
 import { HappinessscorePage } from '../pages/happinessscore/happinessscore';
+import { Visualized3Page } from '../pages/visualized3/visualized3';
+import { ProfilePage } from '../pages/profile/profile';
+import { AddtrustedPage } from '../pages/addtrusted/addtrusted';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -44,15 +47,18 @@ const firebaseAuth = {
     AboutPage,
     HappinesssurveyPage,
     HappinessscorePage,
+    Visualized3Page,
     HomePage,
     TabsPage,
     LoginPage,
     RegisterPage,
     LoggedinPage,
+    ProfilePage,
     GratitudejournalPage,
     MoodloggingPage,
     AwesomePage,
-    MediaPage
+    MediaPage,
+    AddtrustedPage
   ],
   imports: [
     BrowserModule,
@@ -69,6 +75,7 @@ const firebaseAuth = {
     AboutPage,
     HappinesssurveyPage,
     HappinessscorePage,
+    Visualized3Page,
     HomePage,
     TabsPage,
     LoginPage,
@@ -76,8 +83,10 @@ const firebaseAuth = {
     LoggedinPage,
     GratitudejournalPage,
     MoodloggingPage,
+    ProfilePage,
     AwesomePage,
-    MediaPage
+    MediaPage,
+    AddtrustedPage
 
   ],
   providers: [
