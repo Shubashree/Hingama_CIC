@@ -88,4 +88,5 @@
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
     <plugin name="cordova-sms-plugin" spec="0.1.13" />
     <engine name="android" spec="7.1.2" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
 </widget>

@@ -32,6 +32,7 @@
     "cordova-plugin-contacts": "3.0.1",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-googleplus": "^5.3.2",
+    "cordova-plugin-inappbrowser": "^3.0.0",
     "cordova-plugin-ionic-keyboard": "^2.1.3",
     "cordova-plugin-ionic-webview": "^2.2.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -73,7 +74,8 @@
         "PLAY_SERVICES_VERSION": "11.8.0"
       },
       "cordova-plugin-contacts": {},
-      "cordova-sms-plugin": {}
+      "cordova-sms-plugin": {},
+      "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
       "android"

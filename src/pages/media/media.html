@@ -1,47 +1,130 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>Motivational Media</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content class="cards-bg">
+<ion-content>
+  <ion-segment [(ngModel)]="selectedSegment">
+    <ion-segment-button value="music" aria-pressed="true">
+      Music
+    </ion-segment-button>
+    <ion-segment-button value="quotes" aria-pressed="false">
+      Quotes
+    </ion-segment-button>
+    <ion-segment-button value="videos" aria-pressed="false">
+      Videos
+    </ion-segment-button>
+  </ion-segment>
 
-  <ion-card *ngFor="let e of items">
+  <div [ngSwitch]="selectedSegment">
+    <div *ngSwitchCase="'music'">
+      <ion-card *ngFor="let e of items">
 
-    <div>
-      <img src="{{e.image[3]['#text']}}" />
+        <div>
+          <img src="{{e.image[3]['#text']}}" />
+        </div>
+
+        <ion-card-content>
+          <ion-card-title>
+            {{e.name}}
+          </ion-card-title>
+          <p>
+            {{e.artist}}
+          </p>
+        </ion-card-content>
+
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='star'></ion-icon>
+              Favorite
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <a ion-button clear small color="danger" href="{{e.url}}" onclick="window.open(this.href, '_blank'); return false;"
+              icon-start>
+              <ion-icon name='musical-notes'></ion-icon>
+              Listen
+            </a>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='share-alt'></ion-icon>
+              Share
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
     </div>
+    <div *ngSwitchCase="'quotes'">
+      <ion-card *ngFor="let e of quotesList">
 
-    <ion-card-content>
-      <ion-card-title>
-        {{e.name}}
-      </ion-card-title>
-      <p>
-        {{e.artist}}
-      </p>
-    </ion-card-content>
+        <ion-card-content>
+          <ion-card-title>
+            {{e.quote}}
+          </ion-card-title>
+          <p>
+            {{e.author}}
+          </p>
+        </ion-card-content>
 
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='star'></ion-icon>
-          Favorite
-        </button>
-      </ion-col>
-      <ion-col text-center>
-        <a ion-button clear small color="danger" href="{{e.url}}" icon-start>
-          <ion-icon name='musical-notes'></ion-icon>
-          Listen
-        </a>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
-        </button>
-      </ion-col>
-    </ion-row>
+      </ion-card>
+    </div>
+    <div *ngSwitchCase="'videos'">
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/aj_jacobs_my_journey_to_thank_all_the_people_responsible_for_my_morning_coffee"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/ingrid_fetell_lee_where_joy_hides_and_how_to_find_it"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/susan_david_the_gift_and_power_of_emotional_courage"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/david_steindl_rast_want_to_be_happy_be_grateful"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/emily_esfahani_smith_there_s_more_to_life_than_being_happy"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/shah_rukh_khan_thoughts_on_humanity_fame_and_love"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div style="max-width:854px">
+          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/pico_iyer_the_art_of_stillness"
+              width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
+              scrolling="no" allowfullscreen></iframe></div>
+        </div>
+      </ion-card>
+    </div>
+  </div>
 
-  </ion-card>
+
 
 </ion-content>
